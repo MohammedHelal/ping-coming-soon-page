@@ -17,7 +17,7 @@ function ComingSoon() {
     }
 
     setIsError(false);
-    console.log(email);
+    setEmail("");
   }
 
   const inputStyle = "email-input " + (isError ? "email-input-error" : "");
@@ -59,9 +59,15 @@ function ComingSoon() {
         alt="Ping logo"
       />
       <div className="social-media-links">
-        <i className="fa fa-facebook" aria-hidden="true"></i>
-        <i className="fa fa-twitter" aria-hidden="true"></i>
-        <i className="fa fa-instagram" aria-hidden="true"></i>
+        <div className="facebook-div">
+          <i className="fa fa-facebook" aria-hidden="true"></i>
+        </div>
+        <div className="twitter-div">
+          <i className="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+        <div className="instagram-div">
+          <i className="fa fa-instagram" aria-hidden="true"></i>
+        </div>
       </div>
       <p className="copyright">
         <i className="fa fa-copyright" aria-hidden="true"></i>

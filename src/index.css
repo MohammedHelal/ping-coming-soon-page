@@ -19,11 +19,11 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Libre Franklin";
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #root {
-  width: 850px;
+  width: 700px;
   margin: 30px auto;
   text-align: center;
 }
@@ -78,18 +78,18 @@ body {
 }
 
 .email-submit-btn {
-  background-color: var(--color-blue);
-  color: white;
-  border-radius: 25px;
-  border: 0;
-  box-shadow: 5px 5px 5px hsl(0, 0%, 85%);
   padding: 12px 25px;
   margin: 10px;
   width: 25%;
   height: 45px;
+  background-color: var(--color-blue);
+  color: white;
+  border-radius: 25px;
+  border: 0;
+  box-shadow: 5px 5px 5px var(--color-pale-blue);
   cursor: pointer;
-  transition: transform 0.2s;
   font-size: 0.8em;
+  transition: transform 0.2s;
 }
 
 .email-submit-btn:active {
@@ -121,16 +121,27 @@ body {
   align-items: center;
 }
 
-.social-media-links i {
-  width: 22px;
+.social-media-links div {
   margin: 10px;
-  padding: 10px;
   border-radius: 22px;
+  border: 1px solid hsl(0, 0%, 95%);
   color: var(--color-blue);
   cursor: pointer;
 }
 
-.social-media-links i:hover {
+.facebook-div {
+  padding: 10px 15px;
+}
+
+.twitter-div {
+  padding: 10px 11px;
+}
+
+.instagram-div {
+  padding: 10px 13px;
+}
+
+.social-media-links div:hover {
   background-color: var(--color-blue);
   color: white;
 }
@@ -155,8 +166,9 @@ footer {
   }
 
   #root {
-    width: 100vw;
+    width: 95vw;
     padding: 0 30px;
+    margin-bottom: 0;
   }
 
   .logo {
@@ -202,9 +214,9 @@ footer {
     text-align: center;
   }
 
-  .social-media-links i {
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
+  .dashboard-img {
+    width: 345px;
+    margin-left: -20px;
+    margin-right: -20px;
   }
 }
