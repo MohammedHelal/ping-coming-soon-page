@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../../images";
 
 function ComingSoon() {
   const [email, setEmail] = useState("");
@@ -23,7 +24,7 @@ function ComingSoon() {
   return (
     <>
       <div className="header">
-        <img className="logo" src="./images/logo.svg" alt="Ping logo" />
+        <img className="logo" src="../../images/logo.svg" alt="Ping logo" />
         <h1 className="heading">
           We are launching <span className="heading-soon">soon!</span>
         </h1>
@@ -53,7 +54,7 @@ function ComingSoon() {
 
       <img
         className="dashboard-img"
-        src="./images/illustration-dashboard.png"
+        src="../../images/illustration-dashboard.png"
         alt="dashboard image"
       />
       <div className="social-media-links">
