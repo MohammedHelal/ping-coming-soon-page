@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../../images";
 
 function ComingSoon() {
   const [email, setEmail] = useState("");
