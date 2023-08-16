@@ -9,8 +9,6 @@ function ComingSoon() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    document.getElementById("input").value = "";
-
     if (!email || email === "" || !emailRegexValidation.test(email)) {
       setIsError(true);
       return;
