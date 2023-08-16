@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   /*Primary*/
   --color-blue: hsl(223, 87%, 63%);
@@ -19,10 +23,13 @@ body {
 }
 
 #root {
-  width: 60vw;
-  height: 100vh;
+  width: 850px;
   margin: 30px auto;
   text-align: center;
+}
+
+.header {
+  margin: 50px 0;
 }
 
 .logo {
@@ -31,7 +38,9 @@ body {
 
 .heading {
   color: var(--color-gray);
-  font-weight: 600;
+  font-weight: 300;
+  font-size: 2.25em;
+  margin-bottom: 20px;
 }
 
 .heading-soon {
@@ -42,28 +51,68 @@ body {
 .email-form {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 85%;
+}
+
+.email-form div {
+  width: 65%;
 }
 
 .email-input {
-  border-radius: 15px;
+  border-radius: 25px;
   border: 1px solid var(--color-pale-blue);
-  padding: 10px;
+  padding: 12px 25px;
   margin: 10px;
+  width: 100%;
+  font-size: 0.8em;
 }
 
-.email-submit {
+.email-input::placeholder {
+  color: var(--color-pale-blue);
+}
+
+.email-input:focus {
+  outline: 1.5px solid var(--color-blue);
+}
+
+.email-submit-btn {
   background-color: var(--color-blue);
   color: white;
-  border-radius: 15px;
+  border-radius: 25px;
   border: 0;
-  box-shadow: 5px 5px 2px var(--color-gray);
-  padding: 10px;
+  box-shadow: 5px 5px 5px hsl(0, 0%, 85%);
+  padding: 12px 25px;
   margin: 10px;
+  width: 25%;
+  height: 45px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  font-size: 0.8em;
+}
+
+.email-submit-btn:active {
+  transform: translate(5px, 5px);
+}
+
+.error {
+  font-size: 0.7em;
+  font-style: italic;
+  color: var(--color-light-red);
+  text-align: start;
+  padding: 12px;
+  margin-top: -10px;
+}
+
+.email-input-error {
+  border: 1px solid var(--color-light-red);
 }
 
 .dashboard-img {
   width: 100%;
+  padding: 30px 0;
+  margin-bottom: 30px;
 }
 
 .social-media-links {
@@ -73,11 +122,12 @@ body {
 }
 
 .social-media-links i {
-  width: 15px;
+  width: 22px;
   margin: 10px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 22px;
   color: var(--color-blue);
+  cursor: pointer;
 }
 
 .social-media-links i:hover {
@@ -88,4 +138,73 @@ body {
 .copyright {
   font-size: 0.8em;
   color: var(--color-gray);
+}
+
+.copyright i {
+  padding-right: 5px;
+}
+
+footer {
+  color: var(--color-blue);
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+
+  #root {
+    width: 100vw;
+    padding: 0 30px;
+  }
+
+  .logo {
+    width: 50px;
+    margin: 30px;
+  }
+
+  .heading {
+    font-size: 2em;
+  }
+
+  .email-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-form div {
+    width: 100%;
+  }
+
+  .email-input {
+    font-size: 1.1em;
+    margin: 0;
+  }
+
+  .email-input::placeholder {
+    text-align: center;
+  }
+
+  .email-submit-btn {
+    width: 100%;
+    font-size: 1.1em;
+  }
+
+  .email-submit-btn:active {
+    transform: translate(0, 5px);
+  }
+
+  .error {
+    font-size: 1em;
+    font-style: italic;
+    color: var(--color-light-red);
+    text-align: center;
+  }
+
+  .social-media-links i {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+  }
 }
