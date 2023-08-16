@@ -56,7 +56,7 @@ function ComingSoon() {
       <img
         className="dashboard-img"
         src="./images/illustration-dashboard.png"
-        alt="Ping logo"
+        alt="dashboard image"
       />
       <div className="social-media-links">
         <div className="facebook-div">
